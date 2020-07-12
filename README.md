@@ -1,120 +1,103 @@
-<!DOCTYPE html>
-<html lang="en-us">
+Web Design Homework - Web Visualization Dashboard (Latitude)
+
+Background
+Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
+
+
+Before You Begin
+
+
+Create a new repository for this project called Web-Design-Challenge. Do not add this homework to an existing repository.
+
+
+Clone the new repository to your computer.
+
+
+Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: WebVisualizations.
+
+
+Add your html files to this folder as well as your assets, Resources and visualizations folders.
+
+
+Push the above changes to GitHub or GitLab.
+
+
+Deploy to GitHub pages.
 
 
 
-<head>
+Latitude - Latitude Analysis Dashboard with Attitude
+For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting weather data.
+In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
-    <meta charset="UTF-8">
-    <title>Lattitude Home</title>
-      
-        <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
-</head>
+Website Requirements
+For reference, see the "Screenshots" section below.
+The website must consist of 7 pages total, including:
 
-<body style="background-color: rgb(250, 249, 249);">
+A landing page containing:
 
-  <nav class="navbar navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a style="color: darkcyan;" class="navbar-brand" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/Index.html#">Lattitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/data.html#">Data</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/comparison.html">Comparisons</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/max_temp.html">Max Tempurature</a>
-            <a class="dropdown-item" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/humidity.html">Humidity</a>
-            <a class="dropdown-item" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/cloudiness.html">Cloudiness</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/wind_speed.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+An explanation of the project.
+Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
 
-      
-    <div class="container">
-      <div class="jumbotron">
-        <h1 style="color: darkcyan; text-align: center;" class="display-4">Welcome to Lattitude</h1>
-        
-        <hr class="my-4">
-        <p style="text-align: center;">An open source data science project proving that weather factors change depending on relation to the equater. The data was obtained using API calls to several websites. It includes thousands of cities. You can see all the data by navigating to the data page on this website. Feel free to do your own alalysis with the following data.  </p>
-      </div>
-    
+
+Four visualization pages, each with:
+
+A descriptive title and heading tag.
+The plot/visualization itself for the selected comparison.
+A paragraph describing the plot and its significance.
+
+
+A "Comparisons" page that:
+
+Contains all of the visualizations on the same page so we can easily visually compare them.
+Uses a Bootstrap grid for the visualizations.
+
+The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
 
 
 
-        <div class="row">
-            <div style="text-align: center; align-content: center;" class="col-md-6">
-              <div class="card" style="width: 30rem;">
-                <img src="assets/images/fig1.png" class="card-img-top" alt="Max Tempurature">
-                <div class="card-body">
-                  <h5 class="card-title">Max Tempurature</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a style="background-color: darkcyan;" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/max_temp.html" class="btn btn-primary">Max Tempurature</a>
-                </div>
-              </div>
-              
-                
-            </div>
-            <div style="text-align:center;align-content: center;" class="col-md-6">
-              <div class="card" style="width: 30rem;">
-                <img src="assets/images/fig2.png" class="card-img-top" alt="Humidity">
-                <div class="card-body">
-                  <h5 class="card-title">Humidity</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a style="background-color: darkcyan;" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/humidity.html" class="btn btn-primary">Humidity</a>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div style="text-align: center;align-content: center;" class="col-md-6">
-              <div class="card" style="width: 30rem;">
-                <img src="assets/images/fig3.png" class="card-img-top" alt="Cloudiness">
-                <div class="card-body">
-                  <h5 class="card-title">Cloudiness</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a style="background-color: darkcyan;" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/cloudiness.html" class="btn btn-primary">Cloudiness</a>
-                </div>
-              </div> 
-            </div>
 
-        
-            <div style="text-align: center;align-content: center;" class="col-md-6">
-              <div class="card" style="width: 30rem;">
-                <img src="assets/images/fig4.png" class="card-img-top" alt="Wind Speed">
-                <div class="card-body">
-                  <h5 class="card-title">Wind Speed</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a style="background-color: darkcyan;" href="http://localhost:52330/Web-Design-Challenge/WebVisualizations/html/wind_speed.html" class="btn btn-primary">Wind Speed</a>
-                </div>
-              </div>
-        </div>
-    </div>
-</body>
-      
+A "Data" page that:
+
+Displays a responsive table containing the data used in the visualizations.
+
+The table must be a bootstrap table component. Hint
+
+The data must come from exporting the .csv file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called to_html that allows you to generate a HTML table from a pandas dataframe. See the documentation here
+
+
+
+
+
+
+The website must, at the top of every page, have a navigation menu that:
+
+Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
+Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
+Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
+Is responsive (using media queries). The nav must have similar behavior as the screenshots "Navigation Menu" section (notice the background color change).
+
+Finally, the website must be deployed to GitHub pages.
+When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
+
+Considerations
+
+You may use the weather data or choose another dataset. Alternatively, you may use the included cities dataset and pull the images from the assets folder.
+You must use Bootstrap. This includes using the Bootstrap navbar component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
+You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
+Be sure to use a CSS media query for the navigation menu.
+Be sure your website works at all window widths/sizes.
+Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
+
+
+Bonuses
+
+Use a different dataset! The requirements above still hold, but make it your own.
+Use a Bootstrap theme to customize your website. You may use a tool like Bootswatch. Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
+Add extra visualizations! The more comparisons the better, right?
+Use meaningful glyphicons next to links in the header.
+Have visualization navigation on every visualizations page with an active state. See the screenshots below.
+
+
+Screenshots
+This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
